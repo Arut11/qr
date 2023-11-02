@@ -15,35 +15,42 @@
     <meta http-equiv="Expires" content="0">
     <link rel="apple-touch-icon" href="" />
     <link rel="manifest" href="manifest.json" />
-    <title>Пив-Буль</title>
+    <title>Пив-бар Пиранья</title>
+    <!--<style>
+        body {
+            background-color: rgb(54, 47, 47);
+        }
+    </style>-->
   </head>
   <body>
     <div id="root"></div>
+    <script src="/qr_menu/src/index.js"></script>
     <div id="__next">
       <div class="layout_layoutWrapper__10mer">
           <header class="header_header__3w6qi">
               <div class="header_headerFirstRow__3AM93">
                   <div class="header_logoContainer__Kapcr">
-                    <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1592159365/pl_demo_vitrina_usp5vqldi/txhrom7b14c7yjuehzqa.png"
-                     class="header_logo__25JoG" alt="Демо-сайт">
+                    <img src="https://s349vlx.storage.yandex.net/rdisk/e376e4230d150d30290c9641879da372bef21461ccaa08a2748c19a8d94c97d6/653c8080/Vta8fFS0Kez8lgt3DlpzY8cVXJwRi2HWlrswIpW2aVqHusw2RX_rf4FmIvHufoI08Ptsu0af_CypBVCi50TQ6Q==?uid=510022273&filename=piranha.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=510022273&fsize=10146&hid=bd4f3bf7c1d50ecddad7ebabf718f4ba&media_type=image&tknv=v2&etag=2c0513e844abfd9997c83272d006f8de&rtoken=pprtVX8DuuyC&force_default=yes&ycrid=na-99b0b365a62f76d86bf6afd2d0869a25-downloader15h&ts=608be6fc12000&s=4ac2773b66672d5bec5522c87dd820ae3e793457471ccd4f62b9c993a3c5b562&pb=U2FsdGVkX18Kx4ySCXRvx9mUHQ2LR3YaH3B5JuZ3OKNFqd0uiJPenCdV0D8kTuq3jNHQw_87ftbPol48IVxC45_pIzQRKDisc3Rj_-hgXP4"
+                     class="header_logo__25JoG" alt="Лого сайта">
                   </div>
                   <div class="header_infoBlock__6Yb0J">
-                      <a href="/qr_menu/src/order.html" class="header_cartLink__3Yd_-">
-                          <div class="header_cartWrapper__1eKTd" title="Корзина">Заказ / 
-                          <!-- -->
-                          0 ₽</div>
-                      </a>
-                  </div>
+                    <a href="/order.html" class="header_cartLink__3Yd_-" id="link">
+                        <div class="header_cartWrapper__1eKTd" title="Корзина">Заказ / 0 ₽
+                        </div>
+                    </a>
+                </div>
               </div>
           </header>
-          <div class="header_spacer__28znP"></div>
+          <!--<div class="header_spacer__28znP"></div>-->
           <div class="layout_filtersBlockWrapper__2mvuM">
               <div class="layout_filtersBlock__2ai9i">
                   <div class="filter-by-category_filterByCategory__UQ8Rd">
-                      <a class="filter-by-category_item__2BptE filter-by-category_selectedItem__120_e" href="#burgery">Бургеры</a>
-                      <a class="filter-by-category_item__2BptE" href="#picca">Пицца</a>
-                      <a class="filter-by-category_item__2BptE" href="#zavtraki">Завтраки</a>
-                      <a class="filter-by-category_item__2BptE" href="#deserty">Десерты</a>
+                      <a class="filter-by-category_item__2BptE" href="#Piv_bar">Пивоной бар</a>
+                      <a class="filter-by-category_item__2BptE" href="#Zakuski">Закуски</a>
+                      <a class="filter-by-category_item__2BptE" href="#Salati">Салаты</a>
+                      <a class="filter-by-category_item__2BptE" href="#Gorbluda">Горячие блюда</a>
+                      <a class="filter-by-category_item__2BptE" href="#Desert">Десерты</a>
+                      <a class="filter-by-category_item__2BptE" href="#Napitki">Напитки</a>
                   </div>
               </div>
           </div>
@@ -53,12 +60,7 @@
 
                   <video poster="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.jpg" class="banners_bannerImage__bhOJU" autoplay="true" loop="" playsinline="true" load="lazy"><source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.webm" type="video/webm"><source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.mp4" type="video/mp4"><source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.ogv"
                      type="video/ogg">
-                     <source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.webm"
-                      type="video/webm">
-                      <source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.mp4"
-                       type="video/mp4">
-                       <source src="https://res.cloudinary.com/restik/video/upload/f_auto,q_auto,so_0p/v1/pl_demo_vitrina_usp5vqldi/n69b5ycd3qk5cqtder5h.ogv"
-                        type="video/ogg">
+
                     </video>
 
                   <div class="MuiCircularProgress-root banners_bannerVideoLoadingIndicator__nNiGX MuiCircularProgress-indeterminate" style="width:20px;height:20px" role="progressbar">
@@ -76,94 +78,128 @@
                   </div>
               </a>
               <div class="products_productsBlock__3yrIi">
-                  <a class="products_categoryAnchor__39M6w products_first__3T6Pn" id="burgery"></a>
-                  <h2 class="products_productsBlockTitle__1gpIN">Бургеры</h2>
+                  <a class="products_categoryAnchor__39M6w products_first__3T6Pn" id="Piv_bar"></a>
+                  <h2 class="products_productsBlockTitle__1gpIN">Пивной бар</h2>
                   <div class="products_productsBlockContent__6TnTv">
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
                               <div class="position_nameAndDescriptionWrapper__33mBZ">
-                                  <p class="position_name__2_bPs" title="ORIGINAL Бургер">ORIGINAL Бургер</p>
-                                  <p class="position_description__3ClsE" title="C котлетой из говядины, сыром чеддер и соусом BBQ">C котлетой из говядины, сыром чеддер и соусом BBQ</p>
+                                  <p class="position_name__2_bPs" title="Чешское пиво">Чешское пиво</p>
+                                  <p class="position_description__3ClsE" title="Чешское пиво - это истинное воплощение
+                                   мастерства и страсти к пивоварению. С его глубоким золотистым оттенком и обильной пеной,
+                                    оно привлекает внимание с первого взгляда. Вас ждет неповторимое сочетание ароматных хмелевых
+                                     нот, которые раскрываются с каждым глотком, образуя прекрасно сбалансированный и долговечный
+                                      вкус">Чешское пиво - это истинное воплощение мастерства и страсти к пивоварению.
+                                       С его глубоким золотистым оттенком и обильной пеной, оно привлекает внимание с первого взгляда.
+                                        Вас ждет неповторимое сочетание ароматных хмелевых нот, которые раскрываются с каждым глотком, 
+                                        образуя прекрасно сбалансированный и долговечный вкус</p>
                               </div>
                               <div class="position_priceBlock__16P3q">
-                                  <p class="position_price__17QNz">380 ₽</p>
+                                  <p class="position_price__17QNz">300 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
-                                  </div>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                </div>
                               </div>
                           </div>
 
                           <div class="position_photoContainer__2Q1tQ">
-                              <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586734490/pl_restik_njk7n7e40/b4m885bdjeieouv25u8g.jpg"
-                               class="position_photo__3bymA" alt="ORIGINAL Бургер">
+                              <img src="/qr_menu/photo/cheshskoe.jpg"
+                               class="position_photo__3bymA" alt="Чешское пиво">
                           </div>
 
                       </div>
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
                               <div class="position_nameAndDescriptionWrapper__33mBZ">
-                                  <p class="position_name__2_bPs" title="Двойной чизбургер">Двойной чизбургер</p>
-                                  <p class="position_description__3ClsE" title="Сочная говяжья котлета, бекон, сыр чеддер, маринованные огурцы, томаты, карамелизированный лук, лук фри, картофель фри, кетчуп.">Сочная говяжья котлета, бекон, сыр чеддер, маринованные огурцы, томаты, карамелизированный лук, лук фри, картофель фри, кетчуп.</p>
+                                  <p class="position_name__2_bPs" title="Темное пиво">Темное пиво</p>
+                                  <p class="position_description__3ClsE" title="Темное пиво приглашает вас погрузиться в мир глубокого и заманчивого вкуса.
+                                   Его насыщенный карамельный цвет и плотная пена создают привлекательное зрелище.
+                                    С первого же запаха вы погружаетесь в атмосферу орехов, шоколада и жареных зерен,
+                                     дополняясь нежными нотками фруктовости.">Темное пиво приглашает вас погрузиться в мир глубокого и заманчивого вкуса.
+                                      Его насыщенный карамельный цвет и плотная пена создают привлекательное зрелище.
+                                       С первого же запаха вы погружаетесь в атмосферу орехов, шоколада и жареных зерен,
+                                        дополняясь нежными нотками фруктовости.</p>
                               </div>
                               <div class="position_priceBlock__16P3q">
-                                  <p class="position_price__17QNz">495 ₽</p>
+                                  <p class="position_price__17QNz">350 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
-                                  </div>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                </div>
                               </div>
                           </div>
 
                           <div class="position_photoContainer__2Q1tQ">
-                              <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586734813/pl_restik_njk7n7e40/pa0151d3nqx9hghsej5w.jpg"
-                               class="position_photo__3bymA" alt="Двойной чизбургер">
+                              <img src="/qr_menu/photo/Temnoe-pivo.jpg"
+                               class="position_photo__3bymA" alt="Темное пиво">
                           </div>
 
                       </div>
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
                               <div class="position_nameAndDescriptionWrapper__33mBZ">
-                                  <p class="position_name__2_bPs" title="Роял бургер">Роял бургер</p>
-                                  <p class="position_description__3ClsE" title="Сочный бургер с мясной котлетой, беконом и сыром.">Сочный бургер с мясной котлетой, беконом и сыром.</p>
+                                  <p class="position_name__2_bPs" title="Крепкое пиво">Крепкое пиво</p>
+                                  <p class="position_description__3ClsE" title="Крепкое пиво представляет собой настоящую силу и энергию в каждой бутылке.
+                                   Его глубокий янтарный цвет и пышная, стойкая пена создают впечатляющее представление.
+                                    С первого же аромата вы почувствуете крепкий залп эфирных нот,
+                                     смешанных с тонкими сладковатыми оттенками.">Крепкое пиво представляет собой настоящую силу и энергию в каждой бутылке.
+                                      Его глубокий янтарный цвет и пышная, стойкая пена создают впечатляющее представление.
+                                       С первого же аромата вы почувствуете крепкий залп эфирных нот,
+                                        смешанных с тонкими сладковатыми оттенками.</p>
                               </div>
                               <div class="position_priceBlock__16P3q">
-                                  <p class="position_price__17QNz">450 ₽</p>
+                                  <p class="position_price__17QNz">400 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
 
                           <div class="position_photoContainer__2Q1tQ">
-                            <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586735554/pl_restik_njk7n7e40/bd729u7uibgr8vrq0b42.jpg"
-                             class="position_photo__3bymA" alt="Роял бургер">       
+                            <img src="/qr_menu/photo/Krepkoe.jpg"
+                             class="position_photo__3bymA" alt="Крепкое пиво">       
                           </div>
 
                       </div>
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
                               <div class="position_nameAndDescriptionWrapper__33mBZ">
-                                  <p class="position_name__2_bPs" title="Чикенбургер">Чикенбургер</p>
-                                  <p class="position_description__3ClsE" title="Куриная котлета в панировке, обжаренный бекон, сыр чеддер, маринованные огурцы, томаты, салат айсберг, картофель фри, соус карри, кетчуп.">Куриная котлета в панировке, обжаренный бекон, сыр чеддер, маринованные огурцы, томаты, салат айсберг, картофель фри, соус карри, кетчуп.</p>
+                                  <p class="position_name__2_bPs" title="Светлое пиво">Светлое пиво</p>
+                                  <p class="position_description__3ClsE" title="
+
+                                  Светлое пиво - это истинная классика, которая приносит свежесть и легкость в каждый глоток.
+                                   Его бледный золотистый цвет и освежающая пена делают его привлекательным и приглашающим напитком.
+                                    С первым ароматом вы почувствуете цитрусовые и травяные нотки, которые создают чувство легкости и приятного освежения.">Светлое пиво - это истинная классика,
+                                     которая приносит свежесть и легкость в каждый глоток.
+                                      Его бледный золотистый цвет и освежающая пена делают его привлекательным и приглашающим напитком.
+                                       С первым ароматом вы почувствуете цитрусовые и травяные нотки, которые создают чувство легкости и приятного освежения.</p>
                               </div>
                               <div class="position_priceBlock__16P3q">
-                                  <p class="position_price__17QNz">390 ₽</p>
+                                  <p class="position_price__17QNz">350 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
 
                           <div class="position_photoContainer__2Q1tQ">
-                            <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586734987/pl_restik_njk7n7e40/zc7bit5guudzkxouihjr.jpg"
-                             class="position_photo__3bymA" alt="Чикенбургер">
+                            <img src="/qr_menu/photo/Svetloe-pivo.jpg"
+                             class="position_photo__3bymA" alt="Светлое пиво">
                           </div>
 
                       </div>
                   </div>
               </div>
               <div class="products_productsBlock__3yrIi">
-                  <a class="products_categoryAnchor__39M6w" id="picca"></a>
-                  <h2 class="products_productsBlockTitle__1gpIN">Пицца</h2>
+                  <a class="products_categoryAnchor__39M6w" id="Zakuski"></a>
+                  <h2 class="products_productsBlockTitle__1gpIN">Закуски</h2>
                   <div class="products_productsBlockContent__6TnTv">
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
@@ -174,7 +210,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">345 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -194,7 +232,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">395 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -214,7 +254,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">450 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -234,7 +276,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">400 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -248,8 +292,8 @@
                   </div>
               </div>
               <div class="products_productsBlock__3yrIi">
-                  <a class="products_categoryAnchor__39M6w" id="zavtraki"></a>
-                  <h2 class="products_productsBlockTitle__1gpIN">Завтраки</h2>
+                  <a class="products_categoryAnchor__39M6w" id="Salati"></a>
+                  <h2 class="products_productsBlockTitle__1gpIN">Салаты</h2>
                   <div class="products_productsBlockContent__6TnTv">
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
@@ -260,7 +304,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">590 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -280,7 +326,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">190,55 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -300,7 +348,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">250 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -320,7 +370,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">350 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -334,8 +386,8 @@
                   </div>
               </div>
               <div class="products_productsBlock__3yrIi">
-                  <a class="products_categoryAnchor__39M6w" id="deserty"></a>
-                  <h2 class="products_productsBlockTitle__1gpIN">Десерты</h2>
+                  <a class="products_categoryAnchor__39M6w" id="Gorbluda"></a>
+                  <h2 class="products_productsBlockTitle__1gpIN">Горячие блюда</h2>
                   <div class="products_productsBlockContent__6TnTv">
                       <div class="position_position__2M-JA">
                           <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
@@ -346,7 +398,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">390 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -366,7 +420,9 @@
                               <div class="position_priceBlock__16P3q">
                                   <p class="position_price__17QNz">230 ₽</p>
                                   <div class="position_addWrapper__1mtqa">
-                                      <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
                                   </div>
                               </div>
                           </div>
@@ -379,66 +435,140 @@
                       </div>
                   </div>
               </div>
+              <div class="products_productsBlock__3yrIi">
+                <a class="products_categoryAnchor__39M6w" id="Desert"></a>
+                <h2 class="products_productsBlockTitle__1gpIN">Десерты</h2>
+                <div class="products_productsBlockContent__6TnTv">
+                    <div class="position_position__2M-JA">
+                        <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
+                            <div class="position_nameAndDescriptionWrapper__33mBZ">
+                                <p class="position_name__2_bPs" title="Кейк со свежей малиной">Кейк со свежей малиной</p>
+                                <p class="position_description__3ClsE" title="Сочный десерт со свежей малиной и шоколадным бисквитом.">Сочный десерт со свежей малиной и шоколадным бисквитом.</p>
+                            </div>
+                            <div class="position_priceBlock__16P3q">
+                                <p class="position_price__17QNz">390 ₽</p>
+                                <div class="position_addWrapper__1mtqa">
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="position_photoContainer__2Q1tQ">
+                          <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586735963/pl_restik_njk7n7e40/g9ddals36fi4jhr5a8a8.jpg"
+                           class="position_photo__3bymA" alt="Кейк со свежей малиной">
+                        </div>
+
+                    </div>
+                    <div class="position_position__2M-JA">
+                        <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
+                            <div class="position_nameAndDescriptionWrapper__33mBZ">
+                                <p class="position_name__2_bPs" title="Малиновый сорбет">Малиновый сорбет</p>
+                                <p class="position_description__3ClsE" title="Ароматный малиновый сорбет с насыщенным ягодным вкусом.">Ароматный малиновый сорбет с насыщенным ягодным вкусом.</p>
+                            </div>
+                            <div class="position_priceBlock__16P3q">
+                                <p class="position_price__17QNz">230 ₽</p>
+                                <div class="position_addWrapper__1mtqa">
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="position_photoContainer__2Q1tQ">
+                          <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586735510/pl_restik_njk7n7e40/n7qoal6skotdiomjewur.jpg"
+                           class="position_photo__3bymA" alt="Малиновый сорбет">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Горячие блюда-->
+            <div class="products_productsBlock__3yrIi">
+                <a class="products_categoryAnchor__39M6w" id="Napitki"></a>
+                <h2 class="products_productsBlockTitle__1gpIN">Напитки</h2>
+                <div class="products_productsBlockContent__6TnTv">
+                    <div class="position_position__2M-JA">
+                        <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
+                            <div class="position_nameAndDescriptionWrapper__33mBZ">
+                                <p class="position_name__2_bPs" title="Кейк со свежей малиной">Кейк со свежей малиной</p>
+                                <p class="position_description__3ClsE" title="Сочный десерт со свежей малиной и шоколадным бисквитом.">Сочный десерт со свежей малиной и шоколадным бисквитом.</p>
+                            </div>
+                            <div class="position_priceBlock__16P3q">
+                                <p class="position_price__17QNz">390 ₽</p>
+                                <div class="position_addWrapper__1mtqa">
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="position_photoContainer__2Q1tQ">
+                          <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586735963/pl_restik_njk7n7e40/g9ddals36fi4jhr5a8a8.jpg"
+                           class="position_photo__3bymA" alt="Кейк со свежей малиной">
+                        </div>
+
+                    </div>
+                    <div class="position_position__2M-JA">
+                        <div class="position_descriptionSection__3BX_u position_descriptionSectionWithImage__3G75Q">
+                            <div class="position_nameAndDescriptionWrapper__33mBZ">
+                                <p class="position_name__2_bPs" title="Малиновый сорбет">Малиновый сорбет</p>
+                                <p class="position_description__3ClsE" title="Ароматный малиновый сорбет с насыщенным ягодным вкусом.">Ароматный малиновый сорбет с насыщенным ягодным вкусом.</p>
+                            </div>
+                            <div class="position_priceBlock__16P3q">
+                                <p class="position_price__17QNz">230 ₽</p>
+                                <div class="position_addWrapper__1mtqa">
+                                    <button class="quantity-button_quantityButton__1KTbZ">-</button>
+                                    <p class="position_quantity__ZG2rH">0</p>
+                                    <button class="quantity-button_quantityButton__1KTbZ">+</button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="position_photoContainer__2Q1tQ">
+                          <img src="https://res.cloudinary.com/restik/image/upload/q_auto,f_auto/v1586735510/pl_restik_njk7n7e40/n7qoal6skotdiomjewur.jpg"
+                           class="position_photo__3bymA" alt="Малиновый сорбет">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
           </main>
           <div class="banners_bottomMargin__dz6VW"></div>
-          <footer class="footer_footer__1tNtI">
-              <!--<p class="footer_madeBy__xhfzh">
-                  Сделано с помощью <a href="https://restik.com/emenu/?utm_source=restik&amp;utm_medium=menu&amp;utm_campaign=demo" target="_blank" class="footer_link___I7Ab">Restik</a>
-              </p>-->
-          </footer>
-      </div>
-      <script type="text/javascript" async=""
-       src="https://www.google-analytics.com/analytics.js"></script>
-       <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-BPNQ90775M&amp;l=dataLayer&amp;cx=c"></script>
-       <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script>
-       <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-26037303-4"></script>
-      <script>
-     window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+          <div class="order-float-button_floatingFooterWrapper__397jk">
+            <div class="order-float-button_orderFloatButtonWrapper__1Awa9">
+                <a href="/order.html" class="order-float-button_cartLink__2lZoh" id="link">
+                    <div class="order-float-button_orderFloatButton__1E-RQ">Заказ / 0 ₽
 
-      gtag('config', 'UA-26037303-4');
-      </script>
-      <noscript>
-        "<div>
-          <img src="https://mc.yandex.ru/watch/64836160" style="position:absolute; left:-9999px;" alt="" />
-      </div>""
-      </noscript>
-      <script>
-          (function(m, e, t, r, i, k, a) {
-              m[i] = m[i] || function() {
-                  (m[i].a = m[i].a || []).push(arguments)
-              }
-              ;
-              m[i].l = 1 * new Date();
-              k = e.createElement(t),
-              a = e.getElementsByTagName(t)[0],
-              k.async = 1,
-              k.src = r,
-              a.parentNode.insertBefore(k, a)
-          }
-          )(window, document, "script", "", "ym");
-
-          ym(64836160, "init", {
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-              webvisor: true
-          });
-      </script>
-      <noscript>
-          <div>
-              <img src="" style="position:absolute; left:-9999px;" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <footer class="footer_footer__1tNtI">
+                <p class="footer_madeBy__xhfzh">Сделано с помощью 
+                    <a href=""
+                     target="_blank" class="footer_link___I7Ab">Restik
+                    </a>
+                </p>
+            </footer>
+        </div>
           </div>
-      </noscript>
-  </div>
-  <script id="__NEXT_DATA__" type="application/json">  </script>
-    <next-route-announcer>
-      <p aria-live="assertive" id="__next-route-announcer__"
-       role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px);
-        height: 1px; margin: -1px; overflow: hidden; padding: 0px;
-         position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
-        </p></next-route-announcer>
       </div>
+  </div>
+  <!--<script>
+    // Добавляем обработчик клика на ссылку, чтобы открыть order.html
+    document.getElementById('link').addEventListener('click', function(e) {
+      e.preventDefault();
+      // Загружаем order.html через AJAX или другим способом
+      fetch('./order.html')
+        .then(response => response.text())
+        .then(html => {
+          // Вставляем контент из order.html в корневой элемент
+          document.getElementById('root').innerHTML = html;
+        });
+    });
+  </script>-->
   </body>
 </html>
